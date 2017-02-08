@@ -17,12 +17,12 @@
 		}
 		div.wrapper {
 			position: relative;
-			padding: 0 0 0 200px;
+			padding: 0 0 0 205px;
 		}
 		div.side {
 			color: white;
 			background-color: blue;
-			width: 180px;
+			width: 185px;
 			height: 100vh;
 			position: absolute;
 			left: 0;
@@ -51,7 +51,7 @@
 		ul.nav {
 			margin: 0;
 			padding: 5px 0;
-			border: solid 1px black;
+			//border: solid 1px black;
 		}
 		ul.nav li {
 			list-style: none;
@@ -62,14 +62,32 @@
 			//border: solid 1px white;
 			color: white;
 			text-decoration: none;
-			padding: 1px 4px;
-			font-size: 1.5em;
-			content: "\f229";
+			padding: 0 4px;
+			margin: 0;
+			font-size: 1.6em;
 		}
+		<!-- ul.nav li:hover { -->
+			<!-- color: black; -->
+			<!-- //border: solid 1px white; -->
+		<!-- } -->
 		ul.nav li a:hover {
 			color: black;
-			font-size: 1.5em;
+			font-size: 1.6em;
 		}
+		#addFolder, #addFile {
+			display: inline-block;
+			border: solid 1px white;
+			padding: 3px;
+			margin: 0 0 20px 4px;
+			height: 20px;
+			cursor: pointer;
+		}
+		#addFolder:hover, #addFile:hover {
+			color: black;
+			border: solid 1px black;
+			background-color: white;
+		}
+		
 	</style>
 	</head>
 
@@ -81,12 +99,13 @@
 			<!-- TOP CLASS ENDS -->
 			<div class="wrapper">
 				<div class="side">
-					DIV.CLASS: SIDE;
 					<ul class="nav">
-						<li><a href="#" class="ion-social-buffer"></a> Drop Item #1</li>
+						<btn id="addFolder">Add Folder</btn>
+						<btn id="addFile">Add File</btn>
+						<li><a href="#" class="ion-android-add-circle"></a> Drop Item #1</li>
 						<li><a href="#" class="ion-android-add-circle"></a> Drop Item #2</li>
-						<li><a href="#" class="ion-android-archive"></a> Drop Item #3</li>
-						<li><a href="#" class="ion-android-arrow-dropdown-circle"></a> Drop Item #4</li>
+						<li><a href="#" class="ion-android-add-circle"></a> Drop Item #3</li>
+						<li><a href="#" class="ion-android-add-circle"></a> Drop Item #4</li>
 					</ul>
 				</div>
 				<!-- SIDE CLASS ENDS -->
@@ -102,7 +121,13 @@
 		<!-- FULLWRAP CLASS ENDS -->
 		
 		<h3><a href="index.html">HOME</a></h3>
+		
+		<script>
+			var x = document.getElementsByClassName("ion-android-add-circle");
+			console.log(x);
+			
+		</script>
 	</body>
 
-	<script src="myjs.js"></script>
+	<!-- <script src="myjs.js"></script> -->
 </html>
