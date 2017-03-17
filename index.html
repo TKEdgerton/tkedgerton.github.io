@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<title>My Webpage</title>
+		
+		<script src="jquery-3.2.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		
+		<style>
+		
+		body {
+			
+			font-family: helvetica;
+			font-size: 110%;
+			color: blacks;
+			margin: 0;
+			padding: 0;
+			
+		}
+		
+		#header {
+		
+			background-color: #DDD;
+			width: 100%;
+			height: 50px;
+			margin: 0 auto;
+			padding-left: 35px;
+		
+		}
+		
+		#banner {
+		
+			background-color: #BCD35F;
+			height: 100px;
+			width: 100%;
+			padding-left: 15px;s
+		
+		}
+		#bodyWrapper {
+		
+			background-color: #797;
+			height: 1000px;
+			width: 100%;
+			padding: 10px 0 0 0;
+		
+		}
+		#content {
+		
+			width: 75%;
+			margin: 0 auto;
+			padding: 10px;
+			border: solid 2px #767;
+			height: 500px;
+			border-bottom-right-radius: 20px;
+			border-top-left-radius: 20px;
+		
+		}
+		.topNav {
+		
+			display: inline-block;
+			margin: 5px 5px 0 0;
+			padding: 10px;
+			border: 1px solid black;
+			border-bottom-right-radius: 8px;
+			border-top-left-radius: 8px;
+		
+		}
+		
+		.topNav:hover {
+		
+			background-color: #BCD35F;
+			text-decoration: none;
+			cursor: pointer;
+			border-bottom-right-radius: 0px;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 8px;
+			border-top-right-radius: 8px;
+			
+		
+		}
+		
+		#fuse-wrapper {
+		
+			display: flex;
+			border: solid 0px black;
+			padding: 5px 0;
+			background-color: #BCD35F;
+		
+		}
+		
+		#fuse-bg {
+		
+			background-image: url("images/fuse-bg.png");
+			background-repeat: repeat-x;
+			height: 20px;
+			flex-grow: 1;
+			border: solid 0px black;
+		
+		}
+		.clear {
+		
+			clear: both;
+		
+		}
+		</style>
+	</head>
+
+	<body>
+		
+		<div id="banner">
+			<img src="images/fused-frog-logo.png">
+		</div>
+			<div id="fuse-wrapper">
+				<img src="images/fuse-small-t2.png">
+				<div id="fuse-bg"></div>
+			</div>
+		<div id="header">
+			<div class="topNav">Home</div>
+			<div class="topNav">Forum</div>
+			<div class="topNav">News</div>
+			<div class="topNav">About Us</div>	
+		</div>
+		<div id="bodyWrapper">
+			<div id="content">
+				Some content.
+			</div>
+		</div>
+		
+	</body>
+
+</html>
